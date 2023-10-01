@@ -1,0 +1,17 @@
+use('Carros')
+db.carros.insertOne({
+    "marca": "Honda",
+    "modelo": "Civic Type-R",
+    "data de fabricacao": "1997-03-07",
+    "chaci do veiculo": "9537KJH8PQ2F6TZX9",
+    "cv de potencia": 297
+})
+
+use('Carros')
+db.carros.insertOne({
+    "marca": "Nissan",
+    "modelo": "GTR R-34",
+    "data de fabricacao": "1999-05-23",
+    "chaci do veiculo": "1HGCM82673A123456",
+    "cv de potencia": 280 
+})
