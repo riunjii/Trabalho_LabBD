@@ -42,4 +42,9 @@ router.get('/id/:id', async(req, res) =>{
         res.status(500).json({"error": err.message})
     }
 })
+
+//Delete da api/carros
+
+
+
 export default router
