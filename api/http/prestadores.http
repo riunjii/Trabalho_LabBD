@@ -9,6 +9,7 @@ Content-Type: application/json
 //POST - inserir novo carro
 POST {{baseUrl}}
 Content-Type: application/json
+
 {
   "marca": "Ford",
   "modelo": "Maverick",
@@ -21,6 +22,7 @@ Content-Type: application/json
 //PUT - Versão Esportiva
 PUT {{baseUrl}}
 Content-Type: application/json
+
 {
 "marca": "Ford",
   "modelo": "Maverick V8",

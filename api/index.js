@@ -20,7 +20,7 @@ app.use('/api/carros', rotasCarros)
 app.get('/api',(req, res) => {
     res.status(200).json({
         message: 'API Carros 100% Funcional🚙',
-        version: '1.0.1'
+        version: '2.0.0'
     })
 })
 
