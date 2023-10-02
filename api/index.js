@@ -1,8 +1,9 @@
-import express, { Router } from 'express'
+import express, { Router } from "express"
 
 
 const app = express()
 const port = 4000
+
 //import das rotas
 import rotasCarros from './routes/carros.js'
 
@@ -19,7 +20,7 @@ app.use('/api/carros', rotasCarros)
 app.get('/api',(req, res) => {
     res.status(200).json({
         message: 'API Carros 100% Funcional🚙',
-        version: '1.0.0'
+        version: '1.0.1'
     })
 })
 

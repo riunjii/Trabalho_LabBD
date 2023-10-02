@@ -1,0 +1,35 @@
+//testagem
+@baseUrl = http://localhost:4000/api/carros
+
+//GET
+GET {{baseUrl}}/id/6519e52459fc44be48758d02
+Content-Type: application/json
+
+###
+//POST - inserir novo carro
+POST {{baseUrl}}
+Content-Type: application/json
+{
+  "marca": "Ford",
+  "modelo": "Maverick",
+  "data de fabricacao": "2022-09-30",
+  "chaci do veiculo": "1HGCM82633A123456",
+  "cv de potencia": 199
+}
+
+###
+//PUT - Versão Esportiva
+PUT {{baseUrl}}
+Content-Type: application/json
+{
+"marca": "Ford",
+  "modelo": "Maverick V8",
+  "data de fabricacao": "2022-12-07",
+  "chaci do veiculo": "1HGCM82633A123456",
+  "cv de potencia": 384
+}
+
+###
+//DELETE
+DELETE {{baseUrl}}/6519f32ff1c7ae178330708e
+Content-Type: application/json
