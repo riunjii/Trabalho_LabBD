@@ -1,6 +1,6 @@
 {
   "name": "projeto-carros",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Projeto com Backend em Node integrado ao MongoDB Cloud",
   "main": "api/index.js",
   "type": "module",

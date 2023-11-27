@@ -1,0 +1,8 @@
+body{
+    background-image: url('../images/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btn.btn-success{
+    background-color: #22066e;
+}
