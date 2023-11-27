@@ -6,6 +6,7 @@ const port = 4000
 
 //import das rotas
 import rotasCarros from './routes/carros.js'
+import rotasUsuarios from './routes/usuario.js'
 
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
@@ -16,6 +17,7 @@ app.use('/favicon.ico', express.static('public/images/carro.png'))
 
 //rotas API
 app.use('/api/carros', rotasCarros)
+app.use('/api/usuarios', rotasUsuarios)
 
 app.get('/api',(req, res) => {
     res.status(200).json({
@@ -27,14 +29,14 @@ app.get('/api',(req, res) => {
 app.use(function(req,res){
     res.status(404).json({
         errors:[{
-            value: '${req.originalUrl}',
-            msg:'A rota ${req.originalUrl} não existe nessa API!',
+            value: `${req.originalUrl}`,
+            msg:`A rota ${req.originalUrl} não existe nessa API!`,
             param: 'invalid route'
         }]
     })
 })
 
 app.listen(port, function(){
-    console.log('Servidor rodando na porta ${port}')
+    console.log(`Servidor rodando na porta ${port}`)
 })
 
